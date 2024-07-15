@@ -1,9 +1,9 @@
-import { Link, useLinkClickHandler } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import Logo from "./Logo";
 import "./styles/Register.css";
 
-const Register = (handleRegistration) => {
+const Register = ({ handleRegistration }) => {
   const [data, setData] = useState({
     username: "",
     email: "",
